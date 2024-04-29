@@ -1,459 +1,599 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Required for all the web page -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="description" value=" This is the description of web page">
-    <meta name="title" value="CSIT 2078">
-    <meta name="theme-color" content="#b71d1c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="description" value=" This is the description of web page" />
+    <meta name="title" value="CSIT 2078" />
+    <meta name="theme-color" content="#b71d1c" />
     <!-- Required for ................ -->
-    <meta property="og:title" content="https://someimage.com/sth.png">
-    <meta property="og:title" content="CSIT 2078">
-    <meta property="og:description" content="Hands on Implementation of csit syllabus">
+    <meta property="og:title" content="https://someimage.com/sth.png" />
+    <meta property="og:title" content="CSIT 2078" />
+    <meta
+      property="og:description"
+      content="Hands on Implementation of csit syllabus"
+    />
     <title>Hello world</title>
     <style>
-        /* css to make div circle */
-        .circle {
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            background-color: brown;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
+      /* css to make div circle */
+      .circle {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      header {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: rgb(113, 67, 199);
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+      }
+      nav ul a {
+        text-decoration: none;
+        color: rgb(191, 193, 45);
+      }
+      footer {
+        background-color: black;
+        width: 100%;
+        color: white;
+        padding: 5px;
+        text-align: center;
+      }
+      aside {
+        background: lightblue;
+        width: 20%;
+        padding: 10px;
+        float: right;
+      }
 
-        #student {}
+      #student {
+      }
 
-        .image {
-            background-repeat: no-repeat;
-            background-size: cover !important;
-        }
-        main{
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        table{
-            border-collapse: collapse;
-            width: 800px;
-            text-align: center;
-
-        }
-        table,th,tr,td{
-            border:1px solid black;
-        }
-        tr:nth-child(even){
-            background-color: aliceblue;
-        }
-        .bankForm{
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            gap: 10px;
-        }
-        .bankForm input{
-            padding: 10px;
-            border: 1px solid #757575;
-            border-radius: 6px;
-        }
-        .bankForm button{
-            background: #3cf063;
-            color: black;
-            padding: 6px;
-            border-radius: 6px;
-        }
-        /* !important above is used because class image is using inline styling that has higher prority so to overwrite */
+      .image {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+        text-align: center;
+      }
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      tr:nth-child(even) {
+        background-color: aliceblue;
+      }
+      .bankForm {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 10px;
+      }
+      .bankForm input {
+        padding: 10px;
+        border: 1px solid #757575;
+        border-radius: 6px;
+      }
+      .bankForm button {
+        background: #3cf063;
+        color: black;
+        padding: 6px;
+        border-radius: 6px;
+      }
+      /* !important above is used because class image is using inline styling that has higher prority so to overwrite */
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <img src="" alt="logo" height="20" width="30" />
+      <h3>Page Title</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <!-- fieldset for every single day -->  
-        <section>    
-            <fieldset>
-                <legend>23 April, 2024(HTML Basics,Text formatting)</legend>
-                <!-- there must be always one heading tag h1 -->
-                <h1>Main Heading</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
-                <!-- paragraph tag -->
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius possimus numquam placeat. Quasi ullam,
-                    voluptas voluptatibus dolor corrupti neque? Cum iste commodi optio, minus rem dignissimos alias saepe natus
-                    beatae.</p>
-                <span>welcome world!!</span>
-                <span>welcome world!!</span>
-                <!-- to select class name css use '.' -->
-                <div class="circle">
-                    S
-                </div>
-                <!-- #student+ tab :shortcut to create div with id -->
-                <div id="student">
-                    Ram
-                </div>
-                <div class="image"
-                    style="width: 500px; height: 600px; background: url(https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024) no-repeat">
-                </div>
-                <hr>
-                <div style="display: grid; gap: 10px;">
-                    <h2>Text Formatting</h2>
-                    <b>This is bold text.</b>
-                    <i>This is itallic.</i>
-                    <u>This is underlined text.</u>
-                    <span id="sulphricacid">
-                        (a+b)<sup>2</sup>
-                        <!-- Super script -->
-                    </span>
-                    <span>
-                        H<sub>2</sub>SO<sub>4</sub>
-                        <!-- subscript -->
-                    </span>
-                </div>
-            </fieldset>
-        </section>
-        <section>
-            <fieldset>
-                <legend>24 April, 2024(small;Pre,br;Formatting text phrases; span,strong,tt,image,Anchor)</legend>
-                <div style="display: flex; flex-direction: column;">
-                    <small>This is small text</small>
-                    <span>
-                        Hi I am Diwash Pokhrel.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur rem quisquam nihil quo, officiis accusamus, iusto quas nobis mollitia reiciendis rerum. Blanditiis reprehenderit illum fugiat numquam quam dolores iste optio.
-                    </span>
-                    <!-- Jsto xa testai auxa!!! -->
-                    <pre>
-                        Hi I am sumit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur rem quisquam nihil quo, officiis accusamus, iusto quas nobis mollitia reiciendis rerum. Blanditiis reprehenderit illum fugiat numquam quam dolores iste optio.
-                    </pre>
-                    <!-- This is a semantic tag that is used for making accessible website(strong) -->
-                    <strong>
-                        I am strong.
-                    </strong>
-                    <b>
-                        I am strong.
-                    </b>
-                    <!-- This is html4 tag and is already depricated -->
-                    <tt>TT tag</tt>
-                    <code>
-                        console.log("Hello World")
-                    </code>
-                    <img 
-                    src="https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024" alt="Human"
-                    width="300px"
-                    height="300px"
-                    >
-                    <!-- Handling error in case the image is not loaded -->
-                    <img 
-                    src="https://lh3.googleusercontent.com/2Ghriclig-YXcE8GLTBTXP1DNnICG7ItsssFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024" alt="Human"
-                    width="300px"
-                    height="300px"
-                    onerror="this.src='https://www.kindpng.com/picc/m/51-512344_happy-retirement-clipart-11-buy-clip-art-funny.png'"
-                    >
-                    <a href="#sulphricacid">
-                        go to H2SO4
-                    </a>
-                    <a href="https://google.com">
-                        Go to google
-                    </a>
-                    <!-- types of target: self,blank,parent-->
-                    <a target="_blank" href="https://google.com">
-                        Go to google in new tab
-                    </a>
-                    <a href="tel:+9779800564411">9800564411</a>
-                    <a href="mailto: ram@gmail.com; subject:request for sth">ram@gmail.com</a>
-                    <!-- Ordered list -->
-                    <ol style="list-style-type: devanagari;">
-                        <li>Eat</li>
-                        <li>Sleep</li>
-                        <li>Code</li>
-                        <li>Repeat</li>
-                        <li>Wake</li>
-                    </ol>
-                    <!-- Unordered list -->
-                    <ul style="list-style-type: circle;">
-                        <li>Eat</li>
-                        <li>Sleep</li>
-                        <li>Code</li>
-                        <li>Repeat</li>
-                        <li>Wake</li>
-                    </ul>
-                </div>
-            </fieldset>
-        </section> 
-        <section>
-            <fieldset>
-                <legend>25 april,2024(HTML Tables)</legend>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>S.N</th>
-                            <th>Name</th>
-                            <th>Roll</th>
-                            <th>Gender</th>
-                            <th>Course</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ram</td>
-                            <td>100</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Shyam</td>
-                            <td>101</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Sabin</td>
-                            <td>102</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Sita</td>
-                            <td>103</td>
-                            <td>F</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Susmita</td>
-                            <td>104</td>
-                            <td>F</td>
-                            <td>CSIT</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>this is footer</tfoot>
-                </table>
-                <h2>Table(Implementation of colspan and rowspan)</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>S.N</th>
-                            <th>Name</th>
-                            <th>Roll</th>
-                            <th>Gender</th>
-                            <th>Course</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ram</td>
-                            <td>100</td>
-                            <td>M</td>
-                            <td rowspan="5">CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Shyam</td>
-                            <td>101</td>
-                            <td>M</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Sabin</td>
-                            <td>102</td>
-                            <td>M</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Sita</td>
-                            <td>103</td>
-                            <td>F</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Susmita</td>
-                            <td>104</td>
-                            <td>F</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>S.N</th>
-                            <th colspan="2">Name</th>
-                            <th>Roll</th>
-                            <th>Gender</th>
-                            <th>Course</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ram</td>
-                            <td>Shrestha</td>
-                            <td>100</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Shyam</td>
-                            <td>Shrestha</td>
-                            <td>101</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Sabin</td>
-                            <td>Shrestha</td>
-                            <td>102</td>
-                            <td>M</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Sita</td>
-                            <td>Shrestha</td>
-                            <td>103</td>
-                            <td>F</td>
-                            <td>CSIT</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Susmita</td>
-                            <td>Shrestha</td>
-                            <td>104</td>
-                            <td>F</td>
-                            <td>CSIT</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                        <tr>
-                        <th>Time & Day</th>
-                        <th>6:30-7:30</th>
-                        <th>7:30-8:30</th>
-                        <th>8:30-9:30</th>
-                        <th></th>
-                        <th>10:00-11:00</th>
-                        <th>11:00-12:00</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td>Sunday</td>
-                        <td>AI</td>
-                        <td>DBMS</td>
-                        <td>OS</td>
-                        <td rowspan="5">
-                            <pre style="width: 25px;">
+      <!-- fieldset for every single day -->
+      <section>
+        <fieldset>
+          <legend>23 April, 2024(HTML Basics,Text formatting)</legend>
+          <!-- there must be always one heading tag h1 -->
+          <h1>Main Heading</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <!-- paragraph tag -->
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+            possimus numquam placeat. Quasi ullam, voluptas voluptatibus dolor
+            corrupti neque? Cum iste commodi optio, minus rem dignissimos alias
+            saepe natus beatae.
+          </p>
+          <span>welcome world!!</span>
+          <span>welcome world!!</span>
+          <!-- to select class name css use '.' -->
+          <div class="circle">S</div>
+          <!-- #student+ tab :shortcut to create div with id -->
+          <div id="student">Ram</div>
+          <div
+            class="image"
+            style="
+              width: 500px;
+              height: 600px;
+              background: url(https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024)
+                no-repeat;
+            "
+          ></div>
+          <hr />
+          <div style="display: grid; gap: 10px">
+            <h2>Text Formatting</h2>
+            <b>This is bold text.</b>
+            <i>This is itallic.</i>
+            <u>This is underlined text.</u>
+            <span id="sulphricacid">
+              (a+b)<sup>2</sup>
+              <!-- Super script -->
+            </span>
+            <span>
+              H<sub>2</sub>SO<sub>4</sub>
+              <!-- subscript -->
+            </span>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>
+            24 April, 2024(small;Pre,br;Formatting text phrases;
+            span,strong,tt,image,Anchor)
+          </legend>
+          <div style="display: flex; flex-direction: column">
+            <small>This is small text</small>
+            <span>
+              Hi I am Diwash Pokhrel. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Consequatur rem quisquam nihil quo, officiis
+              accusamus, iusto quas nobis mollitia reiciendis rerum. Blanditiis
+              reprehenderit illum fugiat numquam quam dolores iste optio.
+            </span>
+            <!-- Jsto xa testai auxa!!! -->
+            <pre>
+                        Hi I am Diwash
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequatur rem quisquam nihil quo, officiis accusamus,
+                        iusto quas nobis mollitia reiciendis rerum. Blanditiis
+                        reprehenderit illum fugiat numquam quam dolores iste optio.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, 
+                        consectetur natus corrupti illum vitae cum possimus rerum 
+                        doloremque omnis aperiam similique eius voluptatem inventore soluta, molestiae perferendis et officia excepturi!
+                    </pre
+            >
+            <!-- This is a semantic tag that is used for making accessible website(strong) -->
+            <strong> I am strong. </strong>
+            <b> I am strong. </b>
+            <!-- This is html4 tag and is already depricated -->
+            <tt>TT tag</tt>
+            <code> console.log("Hello World") </code>
+            <img
+              src="https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024"
+              alt="Human"
+              width="300px"
+              height="300px"
+            />
+            <!-- Handling error in case the image is not loaded -->
+            <img
+              src="https://lh3.googleusercontent.com/2Ghriclig-YXcE8GLTBTXP1DNnICG7ItsssFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024"
+              alt="Human"
+              width="300px"
+              height="300px"
+              onerror="this.src='https://www.kindpng.com/picc/m/51-512344_happy-retirement-clipart-11-buy-clip-art-funny.png'"
+            />
+            <a href="#sulphricacid"> go to H2SO4 </a>
+            <a href="https://google.com"> Go to google </a>
+            <!-- types of target: self,blank,parent-->
+            <a target="_blank" href="https://google.com">
+              Go to google in new tab
+            </a>
+            <a href="tel:+9779800564411">9800564411</a>
+            <a href="mailto: ram@gmail.com; subject:request for sth"
+              >ram@gmail.com</a
+            >
+            <!-- Ordered list -->
+            <ol style="list-style-type: devanagari">
+              <li>Eat</li>
+              <li>Sleep</li>
+              <li>Code</li>
+              <li>Repeat</li>
+              <li>Wake</li>
+            </ol>
+            <!-- Unordered list -->
+            <ul style="list-style-type: circle">
+              <li>Eat</li>
+              <li>Sleep</li>
+              <li>Code</li>
+              <li>Repeat</li>
+              <li>Wake</li>
+            </ul>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>25 april,2024(HTML Tables)</legend>
+          <table>
+            <thead>
+              <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Gender</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>100</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Shyam</td>
+                <td>101</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sabin</td>
+                <td>102</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sita</td>
+                <td>103</td>
+                <td>F</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Susmita</td>
+                <td>104</td>
+                <td>F</td>
+                <td>CSIT</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              this is footer
+            </tfoot>
+          </table>
+          <h2>Table(Implementation of colspan and rowspan)</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Gender</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>100</td>
+                <td>M</td>
+                <td rowspan="5">CSIT</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Shyam</td>
+                <td>101</td>
+                <td>M</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sabin</td>
+                <td>102</td>
+                <td>M</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sita</td>
+                <td>103</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Susmita</td>
+                <td>104</td>
+                <td>F</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>S.N</th>
+                <th colspan="2">Name</th>
+                <th>Roll</th>
+                <th>Gender</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>Shrestha</td>
+                <td>100</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Shyam</td>
+                <td>Shrestha</td>
+                <td>101</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sabin</td>
+                <td>Shrestha</td>
+                <td>102</td>
+                <td>M</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sita</td>
+                <td>Shrestha</td>
+                <td>103</td>
+                <td>F</td>
+                <td>CSIT</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Susmita</td>
+                <td>Shrestha</td>
+                <td>104</td>
+                <td>F</td>
+                <td>CSIT</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Time & Day</th>
+                <th>6:30-7:30</th>
+                <th>7:30-8:30</th>
+                <th>8:30-9:30</th>
+                <th></th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunday</td>
+                <td>AI</td>
+                <td>DBMS</td>
+                <td>OS</td>
+                <td rowspan="5">
+                  <pre style="width: 25px">
         B
         R
         E
         A
         K
-                            </pre>
-                        </td>
-                        <td>CN</td>
-                        <td>Project</td>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>AI</td>
-                            <td>DBMS</td>
-                            <td>OS</td>
-                            <td>CN</td>
-                            <td>Project</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>AI</td>
-                            <td>DBMS</td>
-                            <td>OS</td>
-                            <td>CN</td>
-                            <td>Project</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>AI</td>
-                            <td>DBMS</td>
-                            <td>OS</td>
-                            <td>CN</td>
-                            <td>Project</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>AI</td>
-                            <td>DBMS</td>
-                            <td>OS</td>
-                            <td>CN</td>
-                            <td>Project</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2>iFrame</h2>
-                <iframe width="50%" height="400px" src="https://setopati.com" frameborder="0"></iframe>
-            </fieldset>
-        </section>
-        <section>
-            <fieldset>
-                <legend>26 April,2024(Forms)</legend>
-                <h2>Forms</h2>
-                <form class="bankForm" id="customerForm">
-                    <label for="">Upload your photo</label>
-                    <input required type="file" name="" id="photo">
-                    <input required type="text" placeholder="Name">
-                    <input type="number" placeholder="Age">
-                    <input required type="date" placeholder="DOB">
-                    <input type="color" placeholder="color">
-                    <input required type="text" placeholder="Phone Number">
-                    <select>
-                        <option value="">MALE</option>
-                        <option value="">FEMALE</option>
-                        <option value="">OTHERS</option>
-                    </select>
-                    <h3>Receive alerts in emails and Phone</h3>
-                    <div>
-                        <label for="">Email</label>
-                        <input id="email-opt" type="checkbox" placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="">Phone</label>
-                        <input id="phone-opt" type="checkbox" placeholder="Phone">
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </fieldset>
-        </section> 
-        <section>
-            <fieldset>
-                <legend>28 april,2024(audio,video)</legend>
-                <div>
-                    <audio controls>
-                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
-                    </audio>
-                    <video width="300px" height="300"
-                        autoplay="false"
-                        poster="https://www.kindpng.com/picc/m/51-512344_happy-retirement-clipart-11-buy-clip-art-funny.png" loop preload>
-                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/ogg">
-                    </video>
-                </div>
-            </fieldset>
-        </section> 
+                            </pre
+                  >
+                </td>
+                <td>CN</td>
+                <td>Project</td>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>AI</td>
+                <td>DBMS</td>
+                <td>OS</td>
+                <td>CN</td>
+                <td>Project</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>AI</td>
+                <td>DBMS</td>
+                <td>OS</td>
+                <td>CN</td>
+                <td>Project</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>AI</td>
+                <td>DBMS</td>
+                <td>OS</td>
+                <td>CN</td>
+                <td>Project</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>AI</td>
+                <td>DBMS</td>
+                <td>OS</td>
+                <td>CN</td>
+                <td>Project</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>iFrame</h2>
+          <iframe
+            width="50%"
+            height="400px"
+            src="https://setopati.com"
+            frameborder="0"
+          ></iframe>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>26 April,2024(Forms)</legend>
+          <h2>Forms</h2>
+          <form class="bankForm" id="customerForm">
+            <label for="">Upload your photo</label>
+            <input required type="file" name="" id="photo" />
+            <input required type="text" placeholder="Name" />
+            <input type="number" placeholder="Age" />
+            <input required type="date" placeholder="DOB" />
+            <input type="color" placeholder="color" />
+            <input required type="text" placeholder="Phone Number" />
+            <select>
+              <option value="">MALE</option>
+              <option value="">FEMALE</option>
+              <option value="">OTHERS</option>
+            </select>
+            <h3>Receive alerts in emails and Phone</h3>
+            <div>
+              <label for="">Email</label>
+              <input id="email-opt" type="checkbox" placeholder="Email" />
+            </div>
+            <div>
+              <label for="">Phone</label>
+              <input id="phone-opt" type="checkbox" placeholder="Phone" />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>28 april,2024(audio,video)</legend>
+          <div>
+            <audio controls>
+              <source
+                src="https://www.w3schools.com/html/horse.ogg"
+                type="audio/ogg"
+              />
+            </audio>
+            <video
+              width="300px"
+              height="300"
+              autoplay="false"
+              poster="https://www.kindpng.com/picc/m/51-512344_happy-retirement-clipart-11-buy-clip-art-funny.png"
+              loop
+              preload
+            >
+              <source
+                src="https://www.w3schools.com/html/movie.mp4"
+                type="video/ogg"
+              />
+            </video>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>29 April,2024(Aside, footer, header ,nav)</legend>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              hic, beatae esse illo odio iusto minima inventore voluptatem
+              maxime dignissimos, quos ipsum perferendis enim asperiores ab
+              incidunt iure, veniam modi.
+            </p>
+            <aside>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              cum, earum quam vel harum nemo repudiandae ipsam perferendis
+              cumque iste ducimus esse nesciunt alias ea aliquid tenetur
+              incidunt exercitationem enim.
+            </aside>
+            <h3>Figure, Fig caption</h3>
+            <figure>
+              <img
+                width="100"
+                height="100"
+                alt="haha picture haleko nai xaina hai.."
+              />
+              <figcaption>
+                <i>This is some image</i>
+              </figcaption>
+            </figure>
+          </article>
+
+          <h3>Events</h3>
+          <h4>Mouse events</h4>
+          <button onclick="alert('clicked 1 time')">click me</button>
+          <button ondblclick="alert('clicked 2 times')">
+            click me 2 times
+          </button>
+          <div
+            onmouseenter="console.log('mouse enter a div')"
+            onmouseleave="console.log('mouse left a div')"
+          >this is a div</div>
+          <div
+            onscroll="console.log('user scrolled')"
+            style="height: 100px; overflow: scroll"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minus.
+            In, impedit blanditiis a commodi unde consequuntur excepturi quia
+            accusamus minima tenetur quasi quae illum, nihil ut et vitae magni.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A non
+            atque minus vel veritatis, impedit deserunt minima libero maiores
+            illum quidem nostrum neque recusandae excepturi quo. Placeat rem
+            neque adipisci. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Cum ducimus aspernatur nisi quo ipsam. Provident perspiciatis
+            porro, nulla veritatis pariatur, quas iste vel sint ea iure amet sit
+            quidem obcaecati?
+          </div>
+        </fieldset>
+      </section>
     </main>
+
+    <footer>Copyright 2024 Diwash Pokhrel</footer>
+
     <script>
-        let cForm=document.getElementById('customerForm');
-        cForm.addEventListener('submit',(e)=>{
-            e.preventDefault();
-            console.log('here');
-        })
+      let cForm = document.getElementById("customerForm");
+      cForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log("here");
+      });
     </script>
-</body>
+  </body>
 </html>
