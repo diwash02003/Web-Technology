@@ -566,7 +566,9 @@
           <div
             onmouseenter="console.log('mouse enter a div')"
             onmouseleave="console.log('mouse left a div')"
-          >this is a div</div>
+          >
+            this is a div
+          </div>
           <div
             onscroll="console.log('user scrolled')"
             style="height: 100px; overflow: scroll"
@@ -584,8 +586,42 @@
           </div>
         </fieldset>
       </section>
+      <section>
+        <fieldset>
+          <legend>
+            30 April,2024(KeyBoard events, form events, Window events)
+          </legend>
+          <div
+            onkeypress="console.log('keypressed')"
+            style="display: flex; flex-direction: column; gap: 10px"
+          >
+            <input
+              placeholder="onchange"
+              onchange="console.log('1')"
+              type="text"
+            />
+            <input type="text" placeholder="oninput" oninput="console.log(2)" />
+            <input type="text" />
+
+            <form
+              onreset="alert('form is reset')"
+              onsubmit="alert('hello form is submitted')"
+            >
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </form>
+          </div>
+        </fieldset>
+      </section>
     </main>
 
+    <div>
+      <button onclick="window.scroll(0,0)">Mathi gai hal hai xito</button>
+    </div>
     <footer>Copyright 2024 Diwash Pokhrel</footer>
 
     <script>
@@ -593,6 +629,12 @@
       cForm.addEventListener("submit", (e) => {
         e.preventDefault();
         console.log("here");
+      });
+      window.addEventListener("scroll", () => {
+        console.log("hello user scrolled!!!");
+      });
+      window.addEventListener("click", () => {
+        console.log("hello user click");
       });
     </script>
   </body>
