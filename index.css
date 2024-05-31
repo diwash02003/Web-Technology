@@ -5,10 +5,6 @@
 
 body{
     margin: 5px;
-    font-family: "Sevillana", cursive;
-    font-weight: 400;
-    font-style: normal;
-           
 }
 
 fieldset{
@@ -184,4 +180,27 @@ border: 1px solid #b71d1c;
 .day2:hover{
     text-shadow:5px 5px #b71d1c ;
     text-decoration:none;
+}
+.student-card{
+    border: 1px solid;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.student-card img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.student-card .info-wrapper{
+    /* display: flex;
+    flex-direction: column; */
+    /* or */
+    display: grid;
+    gap: 5px;
 }
