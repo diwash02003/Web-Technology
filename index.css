@@ -204,3 +204,8 @@ border: 1px solid #b71d1c;
     display: grid;
     gap: 5px;
 }
+.student-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
