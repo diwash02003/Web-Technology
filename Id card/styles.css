@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #b0a7a7;
+    font-family: Arial, sans-serif;
+}
+
+.id-card {
+    width: 350px;
+    background-color: #f7f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(52, 52, 170);
+    color: #fff;    
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+} 
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.photo-section {
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 10px;
+}
+
+.photo img {
+    width: 100px;
+    height: 150px;
+    border-radius: 9px 9px 0 0 ;
+    justify-content: center;
+    border: 2px solid;
+    border-color:  rgb(52, 52, 170);
+    padding: 2px;
+}
+
+.qrCode , .photo{
+    align-self:flex-end;
+}
+
+.qrCode img {
+    width: 70px;
+    height: 70px;
+    padding: 10px ;
+    background-color: #b0a7a7;
+
+}
+
+.info {
+    text-align: left;
+    padding: 10px;
+}
+
+.info h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 0;
+    color: #d30927;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: rgb(9, 197, 231);
+}
+
+.footer {
+    background-color: rgb(52, 52, 170);
+    color: #fff;
+    height: 20px;
+}
+
+.pnglogo img {
+    /* Adjust width and height as needed */
+    width: 350px; /* Replace with your desired width */
+    height: 100px; /* Replace with your desired height */
+  }
+
+.pnglogo{
+     margin: auto;
+    }
+
+  .separator {
+    margin-bottom: -13px;
+    width: 100%;  /* Stretch across full width */
+    height: 2px;   /* Line thickness */
+    background-color: red;
+  }
+  
+.auth{
+    text-align: center;
+}
+
+.column{
+    margin-left: 20px;
+    display: flex;
+    gap: 14px;
+}
+
+.bold{
+    color: rgb(9, 197, 231);
+    font: bold;
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.bobo{
+    margin: 0 0 0 0;
+}
+
+.idname{
+    align-self: flex-start;
+}
