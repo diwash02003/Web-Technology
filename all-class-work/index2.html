@@ -14,94 +14,8 @@
       content="Hands on Implementation of csit syllabus"
     />
     <title>Hello world</title>
-    <style>
-      /* css to make div circle */
-      .circle {
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        background-color: brown;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-      }
-      header {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        color: rgb(113, 67, 199);
-      }
-      nav ul {
-        list-style-type: none;
-        display: flex;
-        gap: 10px;
-      }
-      nav ul a {
-        text-decoration: none;
-        color: rgb(191, 193, 45);
-      }
-      footer {
-        background-color: black;
-        width: 100%;
-        color: white;
-        padding: 5px;
-        text-align: center;
-      }
-      aside {
-        background: lightblue;
-        width: 20%;
-        padding: 10px;
-        float: right;
-      }
-
-      #student {
-      }
-
-      .image {
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      main {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 10px;
-      }
-      table {
-        border-collapse: collapse;
-        width: 800px;
-        text-align: center;
-      }
-      table,
-      th,
-      tr,
-      td {
-        border: 1px solid black;
-      }
-      tr:nth-child(even) {
-        background-color: aliceblue;
-      }
-      .bankForm {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        gap: 10px;
-      }
-      .bankForm input {
-        padding: 10px;
-        border: 1px solid #757575;
-        border-radius: 6px;
-      }
-      .bankForm button {
-        background: #3cf063;
-        color: black;
-        padding: 6px;
-        border-radius: 6px;
-      }
-      /* !important above is used because class image is using inline styling that has higher prority so to overwrite */
-    </style>
+    <link rel="stylesheet" href="index2.css" />
   </head>
-
   <body>
     <header>
       <img src="" alt="logo" height="20" width="30" />
@@ -201,7 +115,6 @@
             <strong> I am strong. </strong>
             <b> I am strong. </b>
             <!-- This is html4 tag and is already depricated -->
-            <tt>TT tag</tt>
             <code> console.log("Hello World") </code>
             <img
               src="https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024"
@@ -614,6 +527,38 @@
               <button type="submit">Submit</button>
               <button type="reset">Reset</button>
             </form>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>June 5(Responsive using flex)</legend>
+          <h3>Responsive using flex</h3>
+          <div class="fruits">
+            <div class="fruit">
+              <span>Apple</span>
+              <img src="photos/apple.jpeg" alt="apple" />
+            </div>
+            <div class="fruit">
+              <span>Kiwi</span>
+              <img src="photos/kiwi.jpeg" alt="Kiwi" />
+            </div>
+            <div class="fruit">
+              <span>Watermelon</span>
+              <img src="photos/watermelon.jpeg" alt="watermelon" />
+            </div>
+            <div class="fruit">
+              <span>Mango</span>
+              <img src="photos/mango.jpeg" alt="mango" />
+            </div>
+            <div class="fruit">
+              <span>Guava</span>
+              <img src="photos/guava.jpeg" alt="" />
+            </div>
+            <div class="fruit">
+              <span>Pear</span>
+              <img src="photos/pear.jpeg" alt="pear" />
+            </div>
           </div>
         </fieldset>
       </section>
