@@ -36,7 +36,76 @@
       console.log(abw);
       console.log(abc + " amchowk");
     </script>
-    <!-- External JS inside body -->
-    <script src="./index.js"></script>
+
+    <script>
+      // june 11(numbers, function)
+      //number
+      let num2 = 20;
+      let num3 = 20.02;
+      console.log(num2 + num3);
+      // Boolean
+      let isMale = true;
+      let isHoliday = false;
+
+      //function
+      function getDay() {
+        return "Tuesday";
+      }
+      let today = getDay();
+      console.log(today);
+      //    named function with multiple parameter
+      function sum(num1, num2) {
+        return num1 + num2;
+      }
+      let result = sum(30, 20);
+      console.log(result);
+      function multiplication(num1, num2) {
+        return num1 * num2;
+      }
+      let result1 = multiplication(30, 20);
+      console.log(result1);
+      function diff(num1, num2) {
+        return num1 - num2;
+      }
+      let result2 = diff(30, 20);
+      console.log(result2);
+    </script>
+
+    <script>
+      let phone = "9825990806"; //global scope
+      function getSomething() {
+        let val = "eeeeeeee"; // functional scope
+        let val2;
+        if (1 == 1) {
+          val2 = "print val2"; // block scope, now we just assign a value to val2
+
+          //if the value i
+        }
+        console.log(val2);
+      }
+      getSomething(); // calls getSomething and logs the value of val2
+      console.log("print phone number: " + phone); // logs the global phone variable
+
+      function testLetConstScope() {
+        if (true) {
+          let y = 20; // y is block-scoped
+          const z = 30; // z is block-scoped
+          console.log(y); // 20
+          console.log(z); // 30
+        }
+        console.log(typeof y); // undefined, y is not accessible here
+        console.log(typeof z); // undefined, z is not accessible here
+      }
+      testLetConstScope();
+      console.log("--------------------------------------");
+      function checkForOddEven(number) {
+        if (number % 2 == 0) {
+          console.log("even");
+        } else {
+          console.log("odd");
+        }
+      }
+      checkForOddEven();
+    </script>
   </body>
 </html>
