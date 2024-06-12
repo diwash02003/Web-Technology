@@ -85,7 +85,8 @@
       }
       getSomething(); // calls getSomething and logs the value of val2
       console.log("print phone number: " + phone); // logs the global phone variable
-
+    </script>
+    <script>
       function testLetConstScope() {
         if (true) {
           let y = 20; // y is block-scoped
@@ -97,15 +98,55 @@
         console.log(typeof z); // undefined, z is not accessible here
       }
       testLetConstScope();
+    </script>
+    <script>
       console.log("--------------------------------------");
       function checkForOddEven(number) {
-        if (number % 2 == 0) {
-          console.log("even");
-        } else {
-          console.log("odd");
+        if (number % 2 === 0) {
+          return "even";
         }
+        return "odd";
       }
-      checkForOddEven();
+      console.log(checkForOddEven(4));
+    </script>
+    <script>
+      console.log("--------------------------------------");
+      function isStudentQualified(attandence, marks) {
+        if (
+          (attandence > 75 && marks > 60) ||
+          (marks > 90 && attandence !== 0)
+        ) {
+          return "qualified";
+        }
+        return "NQ";
+      }
+      console.log(isStudentQualified(50, 100));
+      console.log(isStudentQualified(50, 30));
+      console.log(isStudentQualified(0, 30));
+
+      function checkIfEqual(first, second) {
+        if (first === second) {
+          return "Both value and types are equal";
+        } else if (first == second) {
+          return "Only value are equal";
+        }
+        return "Both not equal";
+      }
+      console.log(checkIfEqual("ram", "ram"));
+      console.log(checkIfEqual(20, "20"));
+
+      let count1 = 0;
+      setInterval(() => {
+        count1++;
+        // console.log(count1);
+      }, 1000);
+      console.log("--------------------------------------");
+
+      let count2 = 0;
+      setInterval(() => {
+        count2--;
+        // console.log(count2);
+      }, 1000);
     </script>
   </body>
 </html>
