@@ -95,6 +95,16 @@ for (let student in student25) {
   console.log(student + ": " + student25[student]);
 }
 
-
-
-// console.log("---------for of-------------");
+console.log("---------for in-------------");
+for (let didid in student25) {
+  console.log(didid, student25[didid]); // didid is the property name
+}
+console.log("---------for of-------------");
+let fruits = ["apple", "kiwi", "organge"];
+for (let falFul of fruits) {
+  console.log(falFul, fruits[falFul]); //print index
+}
+console.log("---------for of-------------");
+for (let falFul of fruits) {
+  console.log(falFul); //print values
+}
