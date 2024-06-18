@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Submission</title>
   </head>
   <body>
-    <script src="/Form/object.js"></script>
-    <form onsubmit="handleFormSubmission()">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" />
-
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" />
-
+    <form id="userForm">
       <label for="phoneNumber">Phone Number:</label>
       <input type="text" id="phoneNumber" name="phoneNumber" />
-
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" />
+      <br />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br />
       <button type="submit">Submit</button>
     </form>
+    <script src="object.js"></script>
   </body>
 </html>
