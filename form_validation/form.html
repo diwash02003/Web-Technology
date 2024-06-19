@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Practice</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Forms</legend>
+      <form
+        style="display: grid; gap: 10px; max-width: 500px; margin: auto"
+        class="student-form"
+        id="studentForm"
+      >
+        <input
+          type="text"
+          maxlength="20"
+          placeholder="First Name"
+          id="fName"
+          required
+        />
+        <input
+          type="text"
+          maxlength="20"
+          placeholder="Last Name"
+          id="lName"
+          required
+        />
+        <input
+          id="age"
+          type="number"
+          placeholder="Age"
+          required
+        />
+        <input id="dob" type="date" placeholder="DOB" />
+        <input id="phoneNo" type="text" placeholder="Phone Number" />
+        <input id="address" type="text" placeholder="Address" />
+        <select name="" id="gender">
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+          <option value="OTHERS">OTHERS</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+    <script src="form.js"></script>
+  </body>
+</html>
