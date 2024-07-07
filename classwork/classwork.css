@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#studentList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-entry {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.student-entry:hover {
+    transform: translateY(-3px);
+}
+
+.student-index {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.student-info {
+    color: #555;
+    white-space: pre-wrap; /* This will make sure that new lines are respected */
+}

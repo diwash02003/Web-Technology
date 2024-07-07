@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing HTML Elements</title>
+  </head>
+  <body>
+    <!-- Example HTML Content -->
+    <h1 id="heading">Hello World</h1>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+    <!-- JavaScript Section -->
+    <script>
+      // Accessing an element by ID using getElementById
+      var headingElement = document.getElementById("heading");
+      if (headingElement) {
+        headingElement.innerHTML = "Updated Heading"; // Modify content
+      } else {
+        alert("Element with ID 'heading' not found.");
+      }
+
+      // Accessing elements by tag name using getElementsByTagName
+      var listItems = document.getElementsByTagName("li");
+
+      // Modify content of individual elements
+      if (listItems.length >= 3) {
+        listItems[0].textContent = "New Item 1";
+        listItems[1].textContent = "New Item 2";
+        listItems[2].textContent = "New Item 3";
+      } else {
+        alert("Not enough list items found.");
+      }
+    </script>
+  </body>
+</html>
