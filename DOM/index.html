@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Button with ID "myBtn", "add-user", "button" -->
+    <button id="myBtn">Click Me</button>
+    <button id="add-user">Add user</button>
+    <button id="button">Hello</button>
+  </body>
+  <script>
+    // Select all button elements and assign the collection to btns
+    let btns = document.getElementsByTagName("button");
+
+    // Convert the HTMLCollection to an array using the spread operator
+    let btnsArray = [...btns];
+
+    btnsArray.forEach((button) => {
+      // Add the class "button" to each button
+      button.classList.add("button");
+
+      // Change the inner text of each button to its ID (or some other text, e.g., button's index)
+      button.innerHTML = button.id;
+
+      // Set the background color of each button to red
+      button.style.background = "red";
+
+      // Set the text color of each button to white
+      button.style.color = "White";
+
+      // Set the padding of each button to 10 pixels
+      button.style.padding = "10px";
+
+      // Set the width of each button to 100 pixels
+      button.style.width = "100px";
+
+      // Remove the border of each button
+      button.style.border = "none";
+    });
+  </script>
+  <script src="cookie.js"></script>
+</html>
