@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .center {
+        text-align: center;
+      }
+      #img {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="click-me-btn-1">CLick Me</button>
+    <button id="click-me-btn-2">CLick Me</button>
+    <div class="center">
+      <img id="img" src="" alt="" />
+      <p>hacker hey bhai hacker</p>
+    </div>
+    <script>
+      // old method
+      document
+        .getElementById("click-me-btn-1")
+        .addEventListener("click", () => {
+          console.log("btn clicked");
+        });
+
+      // syntax: $(selector).(() => action)
+      // using jQUery
+      $(document).ready(() => {
+        $("#click-me-btn-2").click(() => {
+          $("#img")
+            .attr("src", "background.jpg")
+            .attr("alt", "images")
+            .slideUp(2000)
+            .slideDown(2000);
+          $("#click-me-btn-2")
+            .text("Hello World")
+            .css("color", "red")
+            .css("position", "absolute")
+            .animate({ right: "10px" }, 3000);
+          //   $("#click-me-btn-1").hide();
+          setTimeout(() => {
+            $("#click-me-btn-1").show();
+          }, 3000);
+        });
+      });
+    </script>
+  </body>
+</html>
