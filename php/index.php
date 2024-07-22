@@ -80,8 +80,9 @@
         echo "<br />" . $x . ". " . $array[$x] . "<br />";
     }
 
-    
+
     ?>
+    <!-- <nav><a href="./studentForm.php">Student Form</a><a href=""></a></nav> -->
 </body>
 
 </html>
