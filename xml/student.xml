@@ -1,0 +1,29 @@
+<csit>
+    <student>
+        <name>
+            <fName>Diwash</fName>
+            <lName>Pokhrel</lName>
+        </name>
+        <age>21</age>
+        <roll>14</roll>
+        <adderss>Damak</adderss>
+    </student>
+    <student>
+        <name>
+            <fName>Sumit</fName>
+            <lName>Shrestha</lName>
+        </name>
+        <age>21</age>
+        <roll>40</roll>
+        <address>Gokarna</address>
+    </student>
+    <student>
+        <name>
+            <fName>Monu</fName>
+            <lName>Siddiki</lName>
+        </name>
+        <age>21</age>
+        <roll>14</roll>
+        <address>Surkhet</address>
+    </student>
+</csit>

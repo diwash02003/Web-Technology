@@ -29,9 +29,22 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+    include "./session.php";
+    ?>
+
     <button style="color:<?php echo "red"; ?>"> click me </button>
     <br />
     <br />
+
+    <?php
+    echo $_SESSION["language"];
+    $name = "Diwash";
+    echo $name;
+    session_destroy();
+
+    ?>
 
     <?php
     function day($choice)
