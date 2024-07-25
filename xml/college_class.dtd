@@ -1,0 +1,12 @@
+
+<!ELEMENT college (student+)>
+<!ELEMENT student (firstName,lastName,contact,email,address+,age)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (city,state,pin)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT pin (#PCDATA)>
+<!ELEMENT age (#PCDATA)>

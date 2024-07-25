@@ -1,3 +1,14 @@
+<!DOCTYPE csit [
+    <!ELEMENT csit (student+)>
+<!ELEMENT student (name+,age,roll,address)>
+<!ELEMENT name (fName,lName)>
+<!ELEMENT fName (#PCDATA)>
+<!ELEMENT lName (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT roll (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+]>
+
 <csit>
     <student>
         <name>
@@ -6,7 +17,7 @@
         </name>
         <age>21</age>
         <roll>14</roll>
-        <adderss>Damak</adderss>
+        <address>Damak</address>
     </student>
     <student>
         <name>

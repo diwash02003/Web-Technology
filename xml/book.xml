@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<bookstore location="nepal">
+    <book category="fiction">
+        <author gender="M">Ram</author>
+        <title>Harry Putter</title>
+        <price>1500</price>
+        <image>https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024</image>
+    </book>
+    <book category="biography">
+        <author gender="F">Shyama Rai</author>
+        <title>Hobbit</title>
+        <price>2500</price>
+        <image>https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024</image>
+    </book>
+    <book category="self-help">
+        <author gender="M">Sandeep Maheshowri</author>
+        <title>Learn and Earn</title>
+        <price>2500</price>
+        <image>https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024</image>
+
+    </book>
+</bookstore>

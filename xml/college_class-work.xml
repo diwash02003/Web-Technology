@@ -1,0 +1,28 @@
+<?xml-stylesheet version="1.0" type="text/xls" href="xml/xsl"?>
+<college xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="college_class-work.xsd">
+    <student>
+        <firstName>Diwash</firstName>
+        <lastName>Pokhrel</lastName>
+        <contact>9825990806</contact>
+        <email>dpokhrel111@gmail.com</email>
+        <address>
+            <city>damak</city>
+            <state>koshi</state>
+            <pin>0001</pin>
+        </address>
+        <age>20</age>
+    </student>
+    <student>
+        <firstName>Miraz</firstName>
+        <lastName>Aryal</lastName>
+        <contact>9800000000</contact>
+        <email>gandu@gmail.com</email>
+        <address>
+            <city>ktm</city>
+            <state>bagmati</state>
+            <pin>0009</pin>
+        </address>
+        <age>20</age>
+
+    </student>
+</college>
