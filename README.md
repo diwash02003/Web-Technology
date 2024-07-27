@@ -4,9 +4,9 @@ Welcome to the Web Technology Book Codes Practice repository! This repository co
 
 ## Table of Contents
 
-- [Array Practice](#array-practice)
-- [DOM](#dom)
-- [Design](#design)
+- [Array Practice](Array_practice)
+- [DOM](DOM)
+- [Design](Design)
 - [Form](#form)
 - [Hamro-Quiz](#hamro-quiz)
 - [Id Card](#id-card)
