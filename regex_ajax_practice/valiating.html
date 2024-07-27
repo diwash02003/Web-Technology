@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex Validation</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <span id="emailError" class="error"></span>
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <span id="passwordError" class="error"></span>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Clear previous error messages
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("passwordError").textContent = "";
+
+          // Get input values
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          // Email validation regex
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          // Password validation regex (at least 8 characters, 1 letter, 1 number)
+          const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+          let valid = true;
+
+          // Validate email
+          if (!emailRegex.test(email)) {
+            document.getElementById("emailError").textContent =
+              "Invalid email format.";
+            valid = false;
+          }
+
+          // Validate password
+          if (!passwordRegex.test(password)) {
+            document.getElementById("passwordError").textContent =
+              "Password must be at least 8 characters long and contain at least one letter and one number.";
+            valid = false;
+          }
+          if (valid) {
+            alert("Form submitted successfully!");
+          }
+        });
+    </script>
+  </body>
+</html>
