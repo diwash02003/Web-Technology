@@ -38,3 +38,22 @@ persons.forEach((person) => {
     console.log(`- ${hobby}`);
   });
 });
+
+const car = [
+  {
+    name: "tesla",
+    model: "2003",
+    color: "black",
+  },
+  {
+    name: "ktm",
+    model: "2004",
+    color: "red",
+  },
+];
+
+car.forEach((mod) => {
+  console.log(
+    "Name: " + mod.name + " Model: " + mod.model + " Color: " + mod.color
+  );
+});
