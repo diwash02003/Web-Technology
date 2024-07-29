@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees [
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (name,age,position,contact+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT contact (phone,email)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+]>
+
+<employees>
+    <employee>
+        <name>Diwash</name>
+        <age>30</age>
+        <position>engineer</position>
+        <contact>
+            <phone>98777</phone>
+            <email>ddd@gmail.com</email>
+        </contact>
+    </employee>
+    <employee>
+        <name>Jane Smith</name>
+        <age>28</age>
+        <position>Project Manager</position>
+        <contact>
+            <phone>+0987654321</phone>
+            <email>jane.smith@example.com</email>
+        </contact>
+    </employee>
+</employees>
+
+<!-- 
+    XML (Extensible Markup Language) is a markup language 
+    designed to store and transport data. 
+    It is both human-readable and machine-readable. 
+    XML allows users to define their own tags and the 
+    structure of the document, making it highly flexible 
+    for various applications such as data exchange, 
+    configuration files, and more.
+  -->
