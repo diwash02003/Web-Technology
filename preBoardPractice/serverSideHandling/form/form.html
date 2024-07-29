@@ -1,0 +1,46 @@
+<!-- book_search_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Search Catalog</title>
+  </head>
+  <body>
+    <h1>Book Search Catalog</h1>
+    <form action="form.php" method="post">
+      <label for="search_type">Search Type:</label>
+      <select name="search_type" id="search_type">
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="genre">Genre</option></select
+      ><br /><br />
+
+      <label for="search_keyword">Search Keyword:</label>
+      <input
+        type="text"
+        id="search_keyword"
+        name="search_keyword"
+        required
+      /><br /><br />
+
+      <label for="download_type">Download Type:</label><br />
+      <input
+        type="radio"
+        id="download_true"
+        name="download_type"
+        value="true"
+      />
+      <label for="download_true">True</label><br />
+      <input
+        type="radio"
+        id="download_false"
+        name="download_type"
+        value="false"
+        checked
+      />
+      <label for="download_false">False</label><br /><br />
+
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>

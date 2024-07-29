@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "books.dtd">
+<bookstore>
+    <book>
+        <title>Harry Potter</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <price>29.99</price>
+    </book>
+    <book>
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+        <price>22.99</price>
+    </book>
+</bookstore>
+
+<!-- 
+    XML (Extensible Markup Language) is a markup language 
+    designed to store and transport data. 
+    It is both human-readable and machine-readable. 
+    XML allows users to define their own tags and the 
+    structure of the document, making it highly flexible 
+    for various applications such as data exchange, 
+    configuration files, and more.
+  -->
