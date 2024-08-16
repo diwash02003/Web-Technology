@@ -37,32 +37,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $search_keyword = $_POST['search_keyword'];
     $download_type = ($_POST['download_type'] === 'true') ? 1 : 0;
 
-    $stmt = $conn->prepare("INSERT INTO books (search_type, search_keyword, download_type) VALUES (?, ?, ?)");
-    $stmt->bind_param("ssi", $search_type, $search_keyword, $download_type);
 
-    if ($stmt->execute()) {
+    $sql_insert = "INSERT INTO books (search_type, search_keyword, download_type) 
+               VALUES ('$search_type', '$search_keyword', '$download_type')";
+
+    if ($conn->query($sql_insert) === TRUE) {
         echo "Record stored successfully!<br>";
     } else {
-        echo "Error: " . $stmt->error . "<br>";
+        echo "Error: " . $conn->error;
     }
-    $stmt->close();
 }
 
-// Retrieve data from the database
-$sql_select = "SELECT id, search_type, search_keyword, download_type FROM books";
-$result = $conn->query($sql_select);
 
-if ($result->num_rows > 0) {
-    echo "<h2>Search Results:</h2>";
-    // echo "<table border='1'><tr><th>ID</th><th>Search Type</th><th>Search Keyword</th><th>Download Type</th></tr>";
-    while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"] . "Search Type: " . $row["search_type"] . "search_keyword: " . $row["search_keyword"] . "download_type: " . ($row["download_type"] ? 'True' : 'False') . "<br>";
-    }
-    echo "</table>";
-} else {
-    echo "0 results";
-}
-
-// Close connection
-$conn->close();
+echo '<a href="show.php"><button>view data</button></a>';
 ?>
