@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="timetable.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 5px;
+        padding: 5px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+        text-align: center;
+      }
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      td.break {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timetable-container">
+      <h1>Class Timetable</h1>
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Time & Day</th>
+            <th>6:30-7:30</th>
+            <th>7:30-8:30</th>
+            <th>8:30-9:30</th>
+            <th></th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td class="break" rowspan="5">BREAK</td>
+            <td>CN</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>Project</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
