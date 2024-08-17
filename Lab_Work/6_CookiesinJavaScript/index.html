@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Cookie Example</title>
+    <script>
+      function setCookie(name, value, expireMinutes) {
+        const date = new Date();
+        date.setTime(date.getTime() + expireMinutes * 60 * 1000);
+
+        const expires = "expires=" + date.toUTCString();
+        const path = "path=/";
+        const secure = "SameSite=Lax";
+
+        document.cookie = `${name}=${value}; ${expires}; ${path}; ${secure}`;
+
+        console.log(
+          `Cookie set: ${name}=${value}; Expires at: ${date.toUTCString()}`
+        );
+      }
+      function createCookie() {
+        const name = document.getElementById("cookieName").value;
+        const value = document.getElementById("cookieValue").value;
+        const expireMinutes = document.getElementById("Exp").value;
+        setCookie(name, value, expireMinutes);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Set Cookie Example</h1>
+
+    <label for="cookieName">Cookie Name:</label>
+    <input type="text" id="cookieName" placeholder="Enter cookie name" /><br />
+
+    <label for="cookieValue">Cookie Value:</label>
+    <input type="text" id="cookieValue" placeholder="Enter value" /><br />
+
+    <label for="cookieExpire">Expire (minutes):</label>
+    <input type="number" id="Exp" placeholder="Enter expire time(min)" /><br />
+
+    <button onclick="createCookie()">Set Cookie</button>
+  </body>
+</html>
