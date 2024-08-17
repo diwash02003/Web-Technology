@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Detection</title>
+    <style>
+      #myDiv {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 20px;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">Click Me!</div>
+    <p>Scroll down to trigger the scroll event.</p>
+    <p style="margin-top: 1000px">You've reached the bottom of the page!</p>
+
+    <script>
+      // Event listener for div click
+      document.getElementById("myDiv").addEventListener("click", function () {
+        console.log("Div clicked!");
+      });
+
+      // Event listener for page scroll
+      window.addEventListener("scroll", function () {
+        console.log("Page scrolled!");
+      });
+
+      // Event listener for key press
+      window.addEventListener("keydown", function (event) {
+        if (event.key === "A" || event.key === "a") {
+          console.log("Letter A pressed!");
+        }
+      });
+    </script>
+  </body>
+</html>
