@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book+)>
+<!ELEMENT book (id, title, author, genre, price, pub_date)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT pub_date (#PCDATA)>
+]>
+<bookstore>
+    <book>
+        <id>1</id>
+        <title>Public Life and Politics</title>
+        <author>Siddhicharan Shastri</author>
+        <genre>Political Science</genre>
+        <price>350.00</price>
+        <pub_date>2005-11-23</pub_date>
+    </book>
+    <book>
+        <id>2</id>
+        <title>Folktales of Nepal</title>
+        <author>Pushpa Bhatt</author>
+        <genre>Folklore</genre>
+        <price>450.00</price>
+        <pub_date>2010-06-15</pub_date>
+    </book>
+    <book>
+        <id>3</id>
+        <title>The Eternal Journey</title>
+        <author>Samadhi Yoshi</author>
+        <genre>Novel</genre>
+        <price>500.00</price>
+        <pub_date>2018-09-12</pub_date>
+    </book>
+</bookstore>
+
