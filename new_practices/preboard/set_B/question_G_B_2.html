@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>open console to see output</h1>
+    <script>
+      function findLongestWord(sentence) {
+        let words = sentence.split(" ");
+
+        let maxLength = 0;
+
+        words.forEach((element) => {
+          if (element.length > maxLength) {
+            maxLength = element.length;
+          }
+        });
+
+        let longestWords = words.filter((word) => word.length === maxLength);
+
+        return longestWords[0];
+      }
+
+      let sentence = "The quick brown fox jumps over the lazy dog";
+      console.log(findLongestWord(sentence));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+    <!-- Template to match the root element -->
+    <xsl:template match="/library">
+        <html>
+            <body>
+                <h2>Book List</h2>
+                <ol>
+                    <!-- Apply templates for each book element -->
+                    <xsl:apply-templates select="book" />
+                </ol>
+            </body>
+        </html>
+    </xsl:template>
+
+    <!-- Template to match each book element -->
+    <xsl:template match="book">
+        <li>
+            <!-- Display the book title -->
+            <xsl:value-of select="title" /> 
+            <!-- Display the author name in italics -->
+            <i> by <xsl:value-of select="author" /></i>
+        </li>
+    </xsl:template>
+
+</xsl:stylesheet>

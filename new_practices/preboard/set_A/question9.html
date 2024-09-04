@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show in Console</title>
+  </head>
+  <body>
+    <h1>Open the console to see results.</h1>
+    <script>
+      class Student {
+        constructor(name, grade) {
+          this.name = name;
+          this.grade = grade;
+        }
+      }
+
+      const allStudents = [
+        new Student("Diwash", 90),
+        new Student("Arjun", 99),
+        new Student("Prasad", 79),
+      ];
+
+      console.log("Student List:");
+
+      allStudents.forEach((student, index) => {
+        console.log(
+          `Index ${index}: Name = ${student.name}, Grade = ${student.grade}`
+        );
+      });
+
+      console.log("\nstudents with grade above 80");
+      const higheGrade = allStudents.filter((student) => student.grade > 80);
+      higheGrade.forEach((student) => {
+        console.log(student.name);
+      });
+    </script>
+  </body>
+</html>

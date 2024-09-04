@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animate Example</title>
+    <style>
+        #mydiv {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: absolute; 
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <button id="animateBtn">Animate</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#animateBtn').click(function() {
+                $('#mydiv').animate({
+                    left: "+=300px"
+                }, 1000, function() {
+                    // Callback function executed after animation completes
+                    let currentLeft = parseInt($('#mydiv').css('left'), 10);
+                    
+                    if (currentLeft > 1200) {
+                        // Reset position to 50px if it crossed 1200px
+                        $('#mydiv').css('left', '50px');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

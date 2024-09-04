@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .form-group button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .error {
+        color: #e74c3c;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container" onsubmit="return ">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <div id="nameError" class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <div id="messageError" class="error"></div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function success() {
+        // Clear previous error messages
+        document.getElementById("nameError").textContent = "";
+        document.getElementById("emailError").textContent = "";
+        document.getElementById("messageError").textContent = "";
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var message = document.getElementById("message").value.trim();
+
+        let valid = true;
+
+        if (name === "") {
+          document.getElementById("nameError").textContent =
+            "Name is required.";
+          valid = false;
+        }
+
+        if (email === "") {
+          document.getElementById("emailError").textContent =
+            "Email is required.";
+          valid = false;
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+          document.getElementById("emailError").textContent =
+            "Invalid email address.";
+          valid = false;
+        }
+
+        if (message === "") {
+          document.getElementById("messageError").textContent =
+            "Message is required.";
+          valid = false;
+        }
+
+        if (valid) {
+          alert("Your message has been sent successfully!");
+          return true;
+          name = message = email = "";
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
